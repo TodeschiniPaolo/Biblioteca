@@ -74,5 +74,8 @@ casa_editrice:
     -publica uno o più libri;
 *****************************************
 ------------------------------------------------------------------------------------------------------------------------------
-![informatica](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/ab89c589-e154-4f88-99ff-10b2bc845639)
+DIAGRAMMA ER:
+  ![informatica](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/ab89c589-e154-4f88-99ff-10b2bc845639)
 ------------------------------------------------------------------------------------------------------------------------------
+DIAGRAMMA RELAZIONALE:
+utente(<ins> CF </ins>,
