@@ -88,3 +88,6 @@ casa_editrice:
 *  descrive(<ins> genere_nome, libro_isbn</ins>;
 *  publica(<ins> casa_editrice_nome, libro_isbn</ins>);
 *  controlla(<ins> utente_CF,admin_CF</ins>);
+------------------------------------------------------------------------------------------------------------------------------
+#mockup:
+![mockup](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/c87c775e-5a76-4a52-a359-a701fa846494)
