@@ -74,8 +74,17 @@ casa_editrice:
     -publica uno o più libri;
 *****************************************
 ------------------------------------------------------------------------------------------------------------------------------
-DIAGRAMMA ER:
+#DIAGRAMMA ER:
   ![informatica](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/ab89c589-e154-4f88-99ff-10b2bc845639)
 ------------------------------------------------------------------------------------------------------------------------------
-DIAGRAMMA RELAZIONALE:
-utente(<ins> CF </ins>,
+#DIAGRAMMA RELAZIONALE:
+* utente(<ins> CF </ins>, nome, cognome, password,admin);
+* libro(<ins> isbn </ins>, titolo, autore, anno_pubblicazione, genere, disponibilita);
+* autore(<ins> CF </ins>, nome, cognome, nascita);
+*  genere(<ins> nome </ins>);
+*  casa_edtrice(<ins> nome </ins>);
+*  prenota(<ins> utente_CF, libro_isbn</ins>,da, a);
+*  scrive(<ins> autore_CF, libro_isbn</ins>);
+*  descrive(<ins> genere_nome, libro_isbn</ins>;
+*  publica(<ins> casa_editrice_nome, libro_isbn</ins>);
+*  controlla(<ins> utente_CF,admin_CF</ins>);
