@@ -1,39 +1,81 @@
 PROBLEMA:
   permettere ai lettori con scarse disponibilità economiche di permettersi una lettura a scopo ricreativo o di ricerca
-
+------------------------------------------------------------------------------------------------------------------------------
 DESCRIZIONE:
   una web app che permette la gestione di una biblioteca virtuale
-
+------------------------------------------------------------------------------------------------------------------------------
 FUNZIONALITA:
-  -prenotare uno o più libri
-  -controllare eventuali le prenotazioni gia in atto
-  -controllare la disponibilità di un dato libro
-  -aggiungere al catalogo un nuovo libro
-  -login versione abbonato, versione admin(bibliotecario)
-  -allarme all'account abbonato di scadenza imminente o già avvenuta di una prenotazione
-biblioteca:
-    attributi:
-    relazioni:
-      possiede i libri
-      presta i libi agli abbonati
-
+  -accedere(admin o utente);
+  -controllare i paramentri di un libro;
+  -controllare il catalogo della libreria;
+  utente:
+    -prenotare uno o più libri;
+    -controllare i libri gia in prestito (personali);
+    -avviso scadenza prestiti;
+  admin (bibliotecario):
+    -aggiungere uno o più libri;
+    -controlla scadenze prestiti;
+    -modificare paramentri e disponibilita dei libri;
+    -accettare utenti;
+    -rifiutare utenti;
+    -cancelllare utente;
+------------------------------------------------------------------------------------------------------------------------------
+ENTITA:
+*****************************************
+utente:
+  attributi:
+    -(PK)CF;
+    -nome;
+    -cognome;
+    -password;
+  relazioni:
+    -ISA admin;
+    -prenota uno o più libri;
+    -è controllato da admin
+*****************************************
+admin:
+  attributi:
+  relazioni:
+    -controlla utenti;
+*****************************************
 libro:
   attributi:
-    isbn
-    titolo
-    autore
-    anno
-    genere
-    disponibilità
-
+    -(PK)isbn;
+    -titolo
+    -autore
+    -anno_publicazione
+    -genere
+    -disponibilità
   relazioni:
-    scritto da autore
-    è posseduto dalla biblioteca
+    -scritto da uno o più autori;
+    -è descritto da uno o più generi;
+    -è publicato da una casa editrice;
+    -è prenotato da uno o più utenti;
+***************************************** 
 autore:
     attributi:
-      id
-      nome
-      cognome
-      nascita
+      -(PK)CF;
+      -nome;
+      -cognome;
+      -nascita;
     relazioni:
-      scrive il libro
+      -scrive il libro;
+*****************************************
+genere:
+  attributi:
+    -(PK) nome;
+  relazioni:
+    -descrive uno o più libri;
+*****************************************
+casa_editrice:
+  attributi:
+    -(PK) nome;
+  relazioni:
+    -publica uno o più libri;
+*****************************************
+
+
+
+
+
+    
