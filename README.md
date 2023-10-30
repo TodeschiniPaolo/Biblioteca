@@ -47,6 +47,7 @@
     * anno_publicazione
     * genere
     * disponibilità
+    * immagine
   * relazioni:
     * è scritto da uno o più autori;
     * è descritto da uno o più generi;
@@ -91,4 +92,6 @@
 *  controlla(<ins> utente_CF,admin_CF</ins>);
 ------------------------------------------------------------------------------------------------------------------------------
 #mockup:
-![mockup](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/c87c775e-5a76-4a52-a359-a701fa846494)
+
+![Screenshot 2023-10-30 132416](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/400dfd53-4ce0-4ac1-a325-e89d0093672e)
+![Screenshot 2023-10-30 132433](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/476ba53f-25dd-4190-9f43-da95fa0f5eb2)
