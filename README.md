@@ -1,10 +1,10 @@
-PROBLEMA:
+#PROBLEMA:
   permettere ai lettori con scarse disponibilità economiche di permettersi una lettura a scopo ricreativo o di ricerca
 ------------------------------------------------------------------------------------------------------------------------------
-DESCRIZIONE:
+#DESCRIZIONE:
   una web app che permette la gestione di una biblioteca virtuale
 ------------------------------------------------------------------------------------------------------------------------------
-FUNZIONALITA:
+#FUNZIONALITA:
   * accedere(admin o utente);
   * controllare i paramentri di un libro;
   * controllare il catalogo della libreria;
@@ -21,58 +21,58 @@ FUNZIONALITA:
     * rifiutare utenti;
     * cancelllare utente;
 ------------------------------------------------------------------------------------------------------------------------------
-ENTITA:
+#ENTITA:
 *****************************************
-utente:
-  attributi:
-    -(PK)CF;
-    -nome;
-    -cognome;
-    -password;
-  relazioni:
-    -ISA admin;
-    -prenota uno o più libri;
-    -è controllato da admin
+* utente:
+  * attributi:
+    * (PK)CF;
+    * nome;
+    * cognome;
+    * password;
+  * relazioni:
+    * ISA admin;
+    * prenota uno o più libri;
+    * è controllato da admin
 *****************************************
-admin:
-  attributi:
-  relazioni:
-    -controlla utenti;
+* admin:
+  * attributi:
+  * relazioni:
+    * controlla utenti;
 *****************************************
-libro:
-  attributi:
-    -(PK)isbn;
-    -titolo
-    -autore
-    -anno_publicazione
-    -genere
-    -disponibilità
-  relazioni:
-    -scritto da uno o più autori;
-    -è descritto da uno o più generi;
-    -è publicato da una casa editrice;
-    -è prenotato da uno o più utenti;
+* libro:
+  * attributi:
+    * (PK)isbn;
+    * titolo
+    * autore
+    * anno_publicazione
+    * genere
+    * disponibilità
+  * relazioni:
+    * è scritto da uno o più autori;
+    * è descritto da uno o più generi;
+    * è publicato da una casa editrice;
+    * è prenotato da uno o più utenti;
 ***************************************** 
-autore:
-    attributi:
-      -(PK)CF;
-      -nome;
-      -cognome;
-      -nascita;
-    relazioni:
-      -scrive il libro;
+* autore:
+    * attributi:
+      * (PK)CF;
+      * nome;
+      * cognome;
+      * nascita;
+    * relazioni:
+      * scrive il libro;
 *****************************************
-genere:
-  attributi:
-    -(PK) nome;
-  relazioni:
-    -descrive uno o più libri;
+* genere:
+  * attributi:
+    * (PK) nome;
+  * relazioni:
+    * descrive uno o più libri;
 *****************************************
-casa_editrice:
-  attributi:
-    -(PK) nome;
-  relazioni:
-    -publica uno o più libri;
+* casa_editrice:
+  * attributi:
+    * (PK) nome;
+  * relazioni:
+    * publica uno o più libri;
 *****************************************
 ------------------------------------------------------------------------------------------------------------------------------
 #DIAGRAMMA ER:
