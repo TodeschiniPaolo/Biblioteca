@@ -5,20 +5,21 @@ DESCRIZIONE:
   una web app che permette la gestione di una biblioteca virtuale
 ------------------------------------------------------------------------------------------------------------------------------
 FUNZIONALITA:
-  * -accedere(admin o utente);
-  * -controllare i paramentri di un libro;
-  * -controllare il catalogo della libreria;
+  * accedere(admin o utente);
+  * controllare i paramentri di un libro;
+  * controllare il catalogo della libreria;
   * utente:
-    * -prenotare uno o più libri;
-    * -controllare i libri gia in prestito (personali);
-    * -avviso scadenza prestiti;
+    * prenotare uno o più libri;
+    * controllare i libri gia in prestito (personali);
+    * avviso scadenza prestiti;
+    * modificare il proprio profilo;
   * admin (bibliotecario):
-    * -aggiungere uno o più libri;
-    * -controlla scadenze prestiti;
-    * -modificare paramentri e disponibilita dei libri;
-    * -accettare utenti;
-    * -rifiutare utenti;
-    * -cancelllare utente;
+    * aggiungere uno o più libri;
+    * controlla scadenze prestiti;
+    * modificare paramentri e disponibilita dei libri;
+    * accettare utenti;
+    * rifiutare utenti;
+    * cancelllare utente;
 ------------------------------------------------------------------------------------------------------------------------------
 ENTITA:
 *****************************************
