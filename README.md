@@ -34,10 +34,12 @@
     * prenota uno o più libri;
     * è controllato da admin
 *****************************************
-* admin:
+* copia:
   * attributi:
+    *id; 
   * relazioni:
-    * controlla utenti;
+    * viene prenotata da uno o piu utenti;
+    * ogni libro ha una o piu copie
 *****************************************
 * libro:
   * attributi:
@@ -52,7 +54,7 @@
     * è scritto da uno o più autori;
     * è descritto da uno o più generi;
     * è publicato da una casa editrice;
-    * è prenotato da uno o più utenti;
+    * ogni libro ha una o piu copie
 ***************************************** 
 * autore:
     * attributi:
@@ -77,7 +79,9 @@
 *****************************************
 ------------------------------------------------------------------------------------------------------------------------------
 #DIAGRAMMA ER:
-  ![informatica](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/ab89c589-e154-4f88-99ff-10b2bc845639)
+![ab89c589-e154-4f88-99ff-10b2bc845639](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/68715edd-bb22-4d0e-aa1b-7d10deeab80a)
+166df)
+
 ------------------------------------------------------------------------------------------------------------------------------
 #DIAGRAMMA RELAZIONALE:
 * utente(<ins> CF </ins>, nome, cognome, password,admin);
@@ -89,7 +93,7 @@
 *  scrive(<ins> autore_CF, libro_isbn</ins>);
 *  descrive(<ins> genere_nome, libro_isbn</ins>;
 *  publica(<ins> casa_editrice_nome, libro_isbn</ins>);
-*  controlla(<ins> utente_CF,admin_CF</ins>);
+
 ------------------------------------------------------------------------------------------------------------------------------
 #mockup:
 
