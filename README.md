@@ -84,18 +84,19 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 #DIAGRAMMA RELAZIONALE:
-* utente(<ins> CF </ins>, nome, cognome, password,admin);
-* libro(<ins> isbn </ins>, titolo, autore, anno_pubblicazione, genere, disponibilita);
+* utente(<ins> CF </ins>, nome, cognome, password);
+* libro(<ins> isbn, copia_id </ins>, titolo, autore, anno_pubblicazione, genere, immagine_libro);
 * autore(<ins> CF </ins>, nome, cognome, nascita);
+* copia(<ins> id </ins>,
 *  genere(<ins> nome </ins>);
 *  casa_edtrice(<ins> nome </ins>);
-*  prenota(<ins> utente_CF, libro_isbn</ins>,da, a);
+*  prenota(<ins> utente_CF, copia_id</ins>,da, a);
 *  scrive(<ins> autore_CF, libro_isbn</ins>);
 *  descrive(<ins> genere_nome, libro_isbn</ins>;
 *  publica(<ins> casa_editrice_nome, libro_isbn</ins>);
 
 ------------------------------------------------------------------------------------------------------------------------------
-#mockup:
+#MOCKUP:
 
 ![Screenshot 2023-10-30 132416](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/400dfd53-4ce0-4ac1-a325-e89d0093672e)
 ![Screenshot 2023-10-30 132433](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/476ba53f-25dd-4190-9f43-da95fa0f5eb2)
