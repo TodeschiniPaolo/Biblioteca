@@ -36,7 +36,7 @@
 *****************************************
 * copia:
   * attributi:
-    *id; 
+    * id; 
   * relazioni:
     * viene prenotata da uno o piu utenti;
     * ogni libro ha una o piu copie
