@@ -48,7 +48,6 @@
     * autore
     * anno_publicazione
     * genere
-    * disponibilità
     * immagine
   * relazioni:
     * è scritto da uno o più autori;
@@ -100,3 +99,34 @@
 
 ![Screenshot 2023-10-30 132416](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/400dfd53-4ce0-4ac1-a325-e89d0093672e)
 ![Screenshot 2023-10-30 132433](https://github.com/TodeschiniPaolo/Biblioteca/assets/101709345/476ba53f-25dd-4190-9f43-da95fa0f5eb2)
+---
+#DDL
+CREATE DATABASE Biblioteca
+
+CREATE TABLE Utente(
+  CF char(16),
+  Nome char(20),
+  Cognome char(20),
+  Password char(255),
+  UNIQUE(Nome, Cognome, Password),
+  PRIMARY KEY (CF)
+);
+
+CREATE TABLE Copia(
+  Id char(255) PRIMARY KEY
+);
+
+CREATE TABLE Libro(
+  Isbn char()
+  Titolo char(50),
+  Autore char(40),
+  Anno_publicazione integer,
+  Genere char(20),
+  Immagine 
+);
+
+CREATE TABLE Autore(
+  CF char(16),
+  nome char(20),,
+  cognome char(20),
+  nascita 
