@@ -28,7 +28,6 @@
             <label>Password:</label>
             <input type="password" name="password" required><br>
             <?php
-                include 'errorCodes.php';
 
                 if (isset($_GET['error'])) {
                     $errorCode = $_GET['error'];
