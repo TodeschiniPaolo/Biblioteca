@@ -22,7 +22,7 @@
     </head>
     <body>
         <h2>Login</h2>
-        <form method="post" action="loginControl.php">
+        <form method="post" action="loginController.php">
             <label>Email:</label>
             <input type="email" name="email" required value="<?php echo isset($_COOKIE['email']) ? $_COOKIE['email'] : ''; ?>"><br>
             <label>Password:</label>

@@ -22,7 +22,7 @@
     </head>
     <body>
         <h2>Register</h2>
-        <form method="post" action="registerControl.php" enctype="multipart/form-data">
+        <form method="post" action="registerController.php" enctype="multipart/form-data">
             <label>CF:</label>
             <input type="text" name="cf" placeholder="cf" required><br>
             <label>Name:</label>
