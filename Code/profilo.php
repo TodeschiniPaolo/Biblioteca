@@ -12,9 +12,11 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"] . "<br>";
+        echo "CF: " . $row["cf"] . "<br>";
         echo "Name: " . $row["name"] . "<br>";
+        echo "Surname: " . $row["surname"] . "<br>";
         echo "Email: " . $row["email"] . "<br>";
+        echo "Password: " . $row["password"] . "<br>";
         // Add more fields as needed
         echo "<br>";
     }
