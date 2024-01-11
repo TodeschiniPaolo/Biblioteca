@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="page-header">
-        <h1>Buonsalve, <b><?php echo htmlspecialchars($_SESSION["name"]); ?></b>. Welcome to our site.</h1>
+        <h1>Buonsalve <b></b> Welcome to our site.</h1>
     </div>
     <p>
         <a href="profilo.php" class="btn btn-warning">Profilo</a>
