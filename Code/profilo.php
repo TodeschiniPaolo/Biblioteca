@@ -49,7 +49,7 @@ $conn->close();
     </style>
     <script>
         function clearPage() {
-            location.reload();
+           
         }
     </script>
 </head>
