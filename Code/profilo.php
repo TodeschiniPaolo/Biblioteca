@@ -2,18 +2,7 @@
 // FILEPATH: /workspaces/Biblioteca/Code/profilo.php
 
 // Assuming you have already established a database connection
-$servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "biblioteca";
-
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include_once("connessione.php");
 
 // Query to retrieve information from the "Utente" table
 $sql = "SELECT * FROM Utente";

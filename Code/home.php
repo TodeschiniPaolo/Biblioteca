@@ -22,7 +22,7 @@
         <h1>Buonsalve, <b><?php echo htmlspecialchars($_SESSION["name"]); ?></b>. Welcome to our site.</h1>
     </div>
     <p>
-        <a href="profilo.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="profilo.php" class="btn btn-warning">Profilo</a>
     <p>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
