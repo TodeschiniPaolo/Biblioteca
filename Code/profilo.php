@@ -12,18 +12,47 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo "CF: " . $row["cf"] . "<br>";
-        echo "Name: " . $row["name"] . "<br>";
-        echo "Surname: " . $row["surname"] . "<br>";
-        echo "Email: " . $row["email"] . "<br>";
-        echo "Password: " . $row["password"] . "<br>";
+        echo "<p>CF: " . $row["cf"] . "</p>";
+        echo "<p>Name: " . $row["name"] . "</p>";
+        echo "<p>Surname: " . $row["surname"] . "</p>";
+        echo "<p>Email: " . $row["email"] . "</p>";
         // Add more fields as needed
         echo "<br>";
     }
 } else {
-    echo "No records found";
+    echo "<p>No records found</p>";
 }
 
 // Close the connection
 $conn->close();
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <?php
+    // Add a link to go back to home.php
+    echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
+    ?>
+</body>
+</html>
