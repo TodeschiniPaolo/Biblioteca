@@ -47,12 +47,17 @@ $conn->close();
             margin-top: 20px;
         }
     </style>
+    <script>
+        function clearPage() {
+            location.reload();
+        }
+    </script>
 </head>
 <body>
     <h1>User Profile</h1>
     <?php
     // Add a link to go back to home.php
-    echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
+    echo '<div class="back-link"><a href="home.php" onclick="clearPage()">Go back to Home</a></div>';
     ?>
 </body>
 </html>
