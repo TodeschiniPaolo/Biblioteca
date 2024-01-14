@@ -4,6 +4,7 @@ CREATE TABLE Utente (
     surname VARCHAR(50),
     email VARCHAR(255) UNIQUE,
     password VARCHAR(128),
+    admin BOOLEAN  DEFAULT FALSE,
     verified BOOLEAN DEFAULT FALSE
 );
 
@@ -35,14 +36,14 @@ CREATE TABLE Libro (
 );
 
 CREATE TABLE Copia (
-    idCopia INTEGER PRIMARY KEY AUTOINCREMENT,
+    idCopia INTEGER PRIMARY KEY AUTO_INCREMENT,
     isbnLibro VARCHAR(50),
     stato VARCHAR(50),
     FOREIGN KEY (isbnLibro) REFERENCES Libro(isbn)
 );
 
 CREATE TABLE Prenota (
-    idPrenotazione INTEGER PRIMARY KEY AUTOINCREMENT,
+    idPrenotazione INTEGER PRIMARY KEY AUTO_INCREMENT,
     dataPrenotazioneUscita DATE,
     dataPrenotazioneRientro DATE,
     cfUtente VARCHAR(16),

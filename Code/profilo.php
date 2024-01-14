@@ -48,8 +48,17 @@ $conn->close();
         }
     </style>
     <script>
-        function clearPage() {
-           
+        function setAdmin() {
+            // Send an AJAX request to update the admin value
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "update_admin.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Handle the response here if needed
+                }
+            };
+            xhr.send("admin=true");
         }
     </script>
 </head>
@@ -57,7 +66,8 @@ $conn->close();
     <h1>User Profile</h1>
     <?php
     // Add a link to go back to home.php
-    echo '<div class="back-link"><a href="home.php" onclick="clearPage()">Go back to Home</a></div>';
+    echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
+    echo '<div class="back-link"><a on-click="setAdmin()">Go back to Home</a></div>';
     ?>
 </body>
 </html>
