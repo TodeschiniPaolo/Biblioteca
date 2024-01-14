@@ -67,7 +67,7 @@ $conn->close();
     <?php
     // Add a link to go back to home.php
     echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
-    echo '<div class="back-link"><button onclick="setAdmin()">Go back to Home</button></div>';
+    echo '<div class="back-link"><button onclick="setAdmin()">admin</button></div>';
     ?>
 </body>
 </html>
