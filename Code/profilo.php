@@ -1,6 +1,6 @@
 <?php
 // FILEPATH: /workspaces/Biblioteca/Code/profilo.php
-
+session_start();
 // Assuming you have already established a database connection
 include_once("connessione.php");
 
