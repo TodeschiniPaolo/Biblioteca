@@ -5,7 +5,7 @@
 include_once("connessione.php");
 
 // Query to retrieve information from the "Utente" table
-$sql = "SELECT * FROM Utente WHERE cf = ' $_SESSION '";
+$sql = "SELECT * FROM Utente WHERE cf = ' $_SESSION[username] '";
 $result = $conn->query($sql);
 
 // Check if any rows are returned
