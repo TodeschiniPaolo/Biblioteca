@@ -60,6 +60,24 @@ $conn->close();
             };
             xhr.send("admin=true");
         }
+        /*function controlla() {
+            // Send an AJAX request to check if the user is an admin
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "check_admin.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var isAdmin = xhr.responseText;
+                    if (isAdmin === "true") {
+                        // Redirect to aggiungiLibro.php
+                        window.location.href = "aggiungiLibro.php";
+                    } else {
+                        // Display error message
+                        alert("You are not an admin.");
+                    }
+                }
+            };
+            xhr.send();
+        }*/
     </script>
 </head>
 <body>
@@ -68,6 +86,8 @@ $conn->close();
     // Add a link to go back to home.php
     echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
     echo '<div class="back-link"><button onclick="setAdmin()">admin</button></div>';
+    //echo '<div class="back-link"><button //onclick="controlla()"//>aggiungi libro</button></div>';
+    echo '<div class="back-link"><a href="aggiungiLibro.php">aggiungi libro</a></div>';
     ?>
 </body>
 </html>
