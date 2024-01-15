@@ -1,6 +1,10 @@
 <?php
     // Start the session and include your database connection file
     session_start();
+    $username = 'nome_utente';
+
+// Salva il nome utente nella variabile di sessione
+    $_SESSION['username'] = $cf;
     include_once("connessione.php");
 
     // Check if form is submitted
