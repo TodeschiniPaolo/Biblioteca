@@ -4,7 +4,7 @@
     $username = 'nome_utente';
 
 // Salva il nome utente nella variabile di sessione
-    $_SESSION['username'] = $cf;
+    $_SESSION['cf'] = $cf;
     include_once("connessione.php");
 
     // Check if form is submitted
