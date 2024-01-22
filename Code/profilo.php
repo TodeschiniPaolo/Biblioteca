@@ -87,7 +87,7 @@ $conn->close();
     echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
     echo '<div class="back-link"><button onclick="setAdmin()">admin</button></div>';
     //echo '<div class="back-link"><button //onclick="controlla()"//>aggiungi libro</button></div>';
-    echo '<div class="back-link"><a href="aggiungiLibro.php">aggiungi libro</a></div>';
+    echo '<div class="back-link"><a href="aggiungi.php">aggiungi</a></div>';
     ?>
 </body>
 </html>
