@@ -7,7 +7,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $isbn = $_POST['isbn'];
         $titolo = $_POST['titolo'];
-        $autore = $_POST['autore'];
+        $cfautore = $_POST['cfautore'];
         $anno_publicazione = $_POST['anno_publicazione'];
         $genere = $_POST['genere'];
         $casa_editrice = $_POST['casa_editrice'];
@@ -17,7 +17,7 @@
 
         if($stmt = mysqli_prepare($conn, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssssss", $isbn, $titolo, $anno_publiczione, $genere, $casa_editice, $autore);
+            mysqli_stmt_bind_param($stmt, "ssssss", $isbn, $titolo, $anno_publiczione, $genere, $casa_editice, $cfautore);
 
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)) {

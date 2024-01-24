@@ -11,11 +11,11 @@
         $data_di_nascita = $_POST['dataDiNascita'];
 
         // Prepare an insert statement
-        $sql = "INSERT INTO Libro (cf, name, surname, dataDiNascita) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO Autore (cf, name, surname, dataDiNascita) VALUES (?, ?, ?, ?)";
 
         if($stmt = mysqli_prepare($conn, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssssss", $cf, $name, $surname, $data_di_nascita );
+            mysqli_stmt_bind_param($stmt, "ssss", $cf, $name, $surname, $data_di_nascita );
 
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)) {

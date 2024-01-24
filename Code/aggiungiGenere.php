@@ -1,9 +1,9 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Register</title>
+        <title>genere</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -21,9 +21,9 @@ DOCTYPE html>
         </style>
     </head>
     <body>
-        <h2>Aggiungi Libro</h2>
+        <h2>Aggiungi genere</h2>
         <form method="post" action="aggiungiGenereController.php" enctype="multipart/form-data">
-            <label>cf:</label>
+            <label>genere:</label>
             <input type="text" name="nome" placeholder="nome" required><br>
             <input type="submit" value="aggiungi">
         </form>

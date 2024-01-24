@@ -27,8 +27,8 @@
             <input type="text" name="isbn" placeholder="isbn" required><br>
             <label>titolo:</label>
             <input type="text" name="titolo" placeholder="titolo" required><br>
-            <label>autore:</label>
-            <input type="text" name="autore" placeholder="autore" required><br>
+            <label>cf autore:</label>
+            <input type="text" name="cfautore" placeholder="cf autore" required><br>
             <label>anno di publicazione:</label>
             <input type="text" name="anno_publicazione" placeholder="anno_publicazone" required><br>
             <label>genere:</label>

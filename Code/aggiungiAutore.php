@@ -21,7 +21,7 @@
         </style>
     </head>
     <body>
-        <h2>Aggiungi Libro</h2>
+        <h2>Aggiungi autore</h2>
         <form method="post" action="aggiungiAutoreController.php" enctype="multipart/form-data">
             <label>cf:</label>
             <input type="text" name="cf" placeholder="cf" required><br>
@@ -30,7 +30,7 @@
             <label>cognome:</label>
             <input type="text" name="surname" placeholder="cognome" required><br>
             <label>data di nascita:</label>
-            <input type="text" name="dataDiNascita" placeholder="dataDiNascita" required><br>
+            <input type="date" name="dataDiNascita" placeholder="dataDiNascita" required><br>
             <input type="submit" value="aggiungi">
         </form>
     </body>
