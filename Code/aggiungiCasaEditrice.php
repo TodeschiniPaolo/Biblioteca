@@ -21,8 +21,8 @@ DOCTYPE html>
         </style>
     </head>
     <body>
-        <h2>Aggiungi Libro</h2>
-        <form method="post" action="aggiungiGenereController.php" enctype="multipart/form-data">
+        <h2>Aggiungi casa editrice</h2>
+        <form method="post" action="aggiungiCasaEditriceController.php" enctype="multipart/form-data">
             <label>cf:</label>
             <input type="text" name="nome" placeholder="nome" required><br>
             <input type="submit" value="aggiungi">

@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -22,9 +22,15 @@ DOCTYPE html>
     </head>
     <body>
         <h2>Aggiungi Libro</h2>
-        <form method="post" action="aggiungiGenereController.php" enctype="multipart/form-data">
+        <form method="post" action="aggiungiAutoreController.php" enctype="multipart/form-data">
             <label>cf:</label>
-            <input type="text" name="nome" placeholder="nome" required><br>
+            <input type="text" name="cf" placeholder="cf" required><br>
+            <label>nome:</label>
+            <input type="text" name="name" placeholder="nome" required><br>
+            <label>cognome:</label>
+            <input type="text" name="surname" placeholder="cognome" required><br>
+            <label>data di nascita:</label>
+            <input type="text" name="dataDiNascita" placeholder="dataDiNascita" required><br>
             <input type="submit" value="aggiungi">
         </form>
     </body>

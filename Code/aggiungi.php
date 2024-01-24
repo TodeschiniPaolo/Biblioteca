@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>aggiungi</title>
     <style type="text/css">
         body{ font: 14px sans-serif; text-align: center; }
     </style>
 </head>
 <body>
     <div class="page-header">
-        <h1>Buonsalve <b></b> Welcome to our site.</h1>
+        <h1>aggiungi</h1>
     </div>
     <p>
-        <a href="aggiungiLibro.php" class="btn btn-warning">Profilo</a>
+        <a href="aggiungiLibro.php" class="btn btn-warning">libro</a>
     <p>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+        <a href="aggiungiAutore.php" class="btn btn-danger">autore</a>
+        <p>
+        <a href="aggiungiCopia.php" class="btn btn-danger">copia</a>
+        <p>
+        <a href="aggiungiGenere.php" class="btn btn-danger">genere</a>
+        <p>
+        <a href="aggiungiCasaEditrice.php" class="btn btn-danger">casa editrice</a>
     </p>
 </body>
 </html>
