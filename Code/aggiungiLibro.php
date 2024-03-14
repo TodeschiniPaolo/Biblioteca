@@ -28,13 +28,58 @@
             <label>titolo:</label>
             <input type="text" name="titolo" placeholder="titolo" required><br>
             <label>cf autore:</label>
-            <input type="text" name="cfautore" placeholder="cf autore" required><br>
+            <?php
+            // Assuming you have a database connection established
+            // Replace 'your_table_name' with the actual table name
+            $query = "SELECT nome FROM autore";
+            $result = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+                echo '<select name="cfautore" placeholder="autore" required>';
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
+                }
+                echo '</select>';
+            } else {
+                echo 'No names found in the table.';
+            }
+            ?><br>
             <label>anno di publicazione:</label>
             <input type="text" name="anno_publicazione" placeholder="anno_publicazone" required><br>
             <label>genere:</label>
-            <input type="text" name="genere" placeholder="genere" required><br>
-            <label>casa editice:</label>
-            <input type="text" name="casa_editrice" placeholder="casa_editice" required><br>
+            <?php
+            // Assuming you have a database connection established
+            // Replace 'your_table_name' with the actual table name
+            $query = "SELECT genere FROM genere";
+            $result = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+                echo '<select name="genere" placeholder="genere" required>';
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<option value="' . $row['genere'] . '">' . $row['genere'] . '</option>';
+                }
+                echo '</select>';
+            } else {
+                echo 'No genres found in the table.';
+            }?><br>
+            <label>casa editrice:</label>
+            <?php
+            // Assuming you have a database connection established
+            // Replace 'your_table_name' with the actual table name
+            $query = "SELECT nome FROM casaeditrice";
+            $result = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+                echo '<select name="casaeditrice" placeholder="casaeditrice" required>';
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
+                }
+                echo '</select>';
+            } else {
+                echo 'No casaeditrice found in the table.';
+            }?><br>
+            <label>anno di publicazione:</label>
+            <input type="text" name="anno_publicazione" placeholder="anno_publicazone" required><br>
             <input type="submit" value="aggiungi">
         </form>
     </body>
