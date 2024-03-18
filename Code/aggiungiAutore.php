@@ -32,6 +32,9 @@
             <label>data di nascita:</label>
             <input type="date" name="dataDiNascita" placeholder="dataDiNascita" required><br>
             <input type="submit" value="aggiungi">
+            <p>
+        <a href="profilo.php" class="btn btn-danger">back</a>
+    </p>
         </form>
     </body>
 </html>

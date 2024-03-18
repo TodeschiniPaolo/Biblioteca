@@ -29,15 +29,16 @@
             <input type="text" name="titolo" placeholder="titolo" required><br>
             <label>cf autore:</label>
             <?php
+            include_once("connessione.php");
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT nome FROM autore";
-            $result = mysqli_query($connection, $query);
+            $query = "SELECT name FROM autore";
+            $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
                 echo '<select name="cfautore" placeholder="autore" required>';
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
+                    echo '<option value="' . $row['name'] . '">' . $row['name'] . '</option>';
                 }
                 echo '</select>';
             } else {
@@ -50,13 +51,13 @@
             <?php
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT genere FROM genere";
-            $result = mysqli_query($connection, $query);
+            $query = "SELECT nome FROM genere";
+            $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
                 echo '<select name="genere" placeholder="genere" required>';
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<option value="' . $row['genere'] . '">' . $row['genere'] . '</option>';
+                    echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
                 }
                 echo '</select>';
             } else {
@@ -67,7 +68,7 @@
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
             $query = "SELECT nome FROM casaeditrice";
-            $result = mysqli_query($connection, $query);
+            $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
                 echo '<select name="casaeditrice" placeholder="casaeditrice" required>';
@@ -81,6 +82,9 @@
             <label>anno di publicazione:</label>
             <input type="text" name="anno_publicazione" placeholder="anno_publicazone" required><br>
             <input type="submit" value="aggiungi">
+            <p>
+        <a href="profilo.php" class="btn btn-danger">back</a>
+    </p>
         </form>
     </body>
 </html>

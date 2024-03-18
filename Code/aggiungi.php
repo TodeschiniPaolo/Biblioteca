@@ -13,7 +13,7 @@
     </div>
     <p>
         <a href="aggiungiLibro.php" class="btn btn-warning">libro</a>
-    <p>
+        <p>
         <a href="aggiungiAutore.php" class="btn btn-danger">autore</a>
         <p>
         <a href="aggiungiCopia.php" class="btn btn-danger">copia</a>
@@ -21,6 +21,8 @@
         <a href="aggiungiGenere.php" class="btn btn-danger">genere</a>
         <p>
         <a href="aggiungiCasaEditrice.php" class="btn btn-danger">casa editrice</a>
+        <p>
+        <a href="profilo.php" class="btn btn-danger">back</a>
     </p>
 </body>
 </html>

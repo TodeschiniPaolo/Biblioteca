@@ -26,6 +26,9 @@
             <label>genere:</label>
             <input type="text" name="nome" placeholder="nome" required><br>
             <input type="submit" value="aggiungi">
+            <p>
+        <a href="profilo.php" class="btn btn-danger">back</a>
+    </p>
         </form>
     </body>
 </html>
