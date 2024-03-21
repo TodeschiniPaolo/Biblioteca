@@ -83,13 +83,14 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 #DIAGRAMMA RELAZIONALE:
-* utente(<ins> CF </ins>, nome, cognome, password);
-* libro(<ins> isbn, copia_id </ins>, titolo, autore, anno_pubblicazione, genere, immagine_libro);
-* autore(<ins> CF </ins>, nome, cognome, nascita);
-* copia(<ins> id </ins>,
-*  genere(<ins> nome </ins>);
-*  casa_edtrice(<ins> nome </ins>);
-*  prenota(<ins> utente_CF, copia_id</ins>,da, a);
+* Tenant(<ins> idTenant </ins>, nome);
+* utente(<ins> CF, tenant_id </ins>, nome, cognome, password);
+* libro(<ins> isbn, genere_id, CasaEditrie_id, autore_cf, tenant_id </ins>, titolo, autore, anno_pubblicazione, genere, immagine_libro);
+* autore(<ins> CF tentant_id </ins>, nome, cognome, nascita);
+* copia(<ins> idCopia, Libro_isbn, tenant_id </ins>, );
+*  genere(<ins> idGenere, tenant_id </ins>, nome);
+*  casa_edtrice(<ins> idCasaEditrice, tenant_id </ins>, nome);
+*  prenota(<ins> idPrenotazione, utente_CF, copia_id, tenant_id</ins>, dataPrenotazioneUscita, dataPrenotazioneRientro);
 *  scrive(<ins> autore_CF, libro_isbn</ins>);
 *  descrive(<ins> genere_nome, libro_isbn</ins>;
 *  publica(<ins> casa_editrice_nome, libro_isbn</ins>);
