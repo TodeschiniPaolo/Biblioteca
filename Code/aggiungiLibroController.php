@@ -17,7 +17,7 @@
 
         if($stmt = mysqli_prepare($conn, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssssss", $isbn, $titolo, $anno_publiczione, $genere, $casa_editice, $cfautore);
+            mysqli_stmt_bind_param($stmt, "ssssss", $isbn, $titolo, $anno_publicazione, $genere, $casa_editrice, $cfautore);
 
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)) {

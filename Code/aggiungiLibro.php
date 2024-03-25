@@ -27,18 +27,18 @@
             <input type="text" name="isbn" placeholder="isbn" required><br>
             <label>titolo:</label>
             <input type="text" name="titolo" placeholder="titolo" required><br>
-            <label>cf autore:</label>
+            <label>autore:</label>
             <?php
             include_once("connessione.php");
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT name FROM autore";
+            $query = "SELECT cf FROM autore";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
                 echo '<select name="cfautore" placeholder="autore" required>';
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<option value="' . $row['name'] . '">' . $row['name'] . '</option>';
+                    echo '<option value="' . $row['cf'] . '">' . $row['cf'] . '</option>';
                 }
                 echo '</select>';
             } else {
@@ -71,7 +71,7 @@
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
-                echo '<select name="casaeditrice" placeholder="casaeditrice" required>';
+                echo '<select name="casa_editrice" placeholder="casaeditrice" required>';
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<option value="' . $row['nome'] . '">' . $row['nome'] . '</option>';
                 }
@@ -79,8 +79,7 @@
             } else {
                 echo 'No casaeditrice found in the table.';
             }?><br>
-            <label>anno di publicazione:</label>
-            <input type="text" name="anno_publicazione" placeholder="anno_publicazone" required><br>
+
             <input type="submit" value="aggiungi">
             <p>
         <a href="profilo.php" class="btn btn-danger">back</a>
