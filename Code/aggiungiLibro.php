@@ -32,7 +32,7 @@
             include_once("connessione.php");
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT cf FROM autore";
+            $query = "SELECT cf FROM Autore";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
@@ -51,7 +51,7 @@
             <?php
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT nome FROM genere";
+            $query = "SELECT nome FROM Genere";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
@@ -67,7 +67,7 @@
             <?php
             // Assuming you have a database connection established
             // Replace 'your_table_name' with the actual table name
-            $query = "SELECT nome FROM casaeditrice";
+            $query = "SELECT nome FROM CasaEditrice";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {
