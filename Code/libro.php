@@ -45,3 +45,6 @@ if (isset($_GET['isbn'])) {
     echo "ISBN parameter is missing.";
 }
 ?>
+
+<a href="prenota.php">prenota <?php echo $titolo?></a>
+<a href="home.php">home</a>
