@@ -21,7 +21,7 @@
         </style>
     </head>
     <body>
-        <h2>Aggiungi casa editrice</h2>
+        <h2>Aggiungi copia</h2>
         <form method="post" action="aggiungiCopiaController.php" enctype="multipart/form-data">
         <label>isbn:</label>
         <?php
