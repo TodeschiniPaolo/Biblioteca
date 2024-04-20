@@ -84,10 +84,11 @@ $conn->close();
     <h1>User Profile</h1>
     <?php
     // Add a link to go back to home.php
-    echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
+    
     echo '<div class="back-link"><button onclick="setAdmin()">admin</button></div>';
     //echo '<div class="back-link"><button //onclick="controlla()"//>aggiungi libro</button></div>';
     echo '<div class="back-link"><a href="aggiungi.php">aggiungi</a></div>';
+    echo '<div class="back-link"><a href="home.php">Go back to Home</a></div>';
     ?>
 </body>
 </html>
